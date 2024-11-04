@@ -8,7 +8,7 @@ Pour pimenter le projet, voici quelques **bonus** que vous pouvez explorer :
 2. **Création d’une API REST** pour faciliter l’aide à la décision avec votre modèle d’apprentissage automatique.
 3. **Proposition d’une IHM animée** en fonction des paramètres simulés et des résultats prédits.
 
-Les données que vous utiliserez proviennent de la **NASA Ames Prognostics Center of Excellence (PCoE)**. Vous pouvez les trouver ici : [Li-ion Battery Aging Datasets](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data).
+Les données que vous utiliserez proviennent de la **NASA Ames Prognostics Center of Excellence (PCoE)**. Vous pouvez les trouver dans ce [fichier discharge.zip](./Design%20a%20ML%20model%20of%20a%20Battery/discharge.zip), ou depuis cette source [Li-ion Battery Aging Datasets](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data).
 
 ## Objectifs
 - **Développer un jumeau numérique** d'une batterie capable de prédire sa capacité ou durée de vie restante.
