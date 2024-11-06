@@ -91,3 +91,11 @@ Voir le dataset 'Prismatic Cells" : [CS2 Battery](https://calce.umd.edu/battery-
 
 ![alt text](image.png)
 
+## Exemple d'UI à développer 
+
+Voici un exemple d'UI à réaliser permettant de : 
+- Afficher l'état de la batterie actuel (temps réel)
+- Simuler un future état de la batterie
+- Afficher un graphique de l'évolution des parametres et résultats des simulations 
+
+![UI](/digitaltwin-battery/Design%20a%20ML%20model%20of%20a%20Battery/images/UI.png)
