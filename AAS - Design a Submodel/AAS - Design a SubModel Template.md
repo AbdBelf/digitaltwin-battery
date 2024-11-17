@@ -1,12 +1,6 @@
-# Design a Submodel Template
+# Motivation - Design a Submodel Template
 Asset Administration Shell (AAS) provides a standardized way to describe assets through submodel templates, ensuring clear and interoperable asset management. 
 This track helps participants learn how to design submodel templates using AAS Package Explorer (AASPE) and apply them to real-world use cases. 
-It also explores the use of AI to streamline template design and automate AAS generation, empowering developers to create more efficient and scalable asset models.
-
-## Motivation 
-Asset Administration Shell (AAS) provides a standardized way to describe assets through submodel templates, ensuring clear and interoperable asset management. 
-This track helps participants learn how to design submodel templates using AAS Package Explorer (AASPE) and apply them to real-world use cases. 
-It also explores the use of AI to streamline template design and automate AAS generation, empowering developers to create more efficient and scalable asset models.
 
 ## Overview
 
@@ -35,13 +29,13 @@ Below is an example of a description for instantiating an AAS SubModel for a bat
 
 2. Installed AASX Package Explorer (You can install it from [here](https://github.com/eclipse-aaspe/package-explorer/releases/tag/v2024-06-10.alpha))
 
-![AAS Import](images/image1.png)
+![AAS Import](../images/image1.png)
 
 
 ## Step 2: Fill in the Submodel Information
 Use the information provided below (section 2 - Breakdown of the Submodel) to fill in the necessary values
 
-![AAS Create](images/image2.png)
+![AAS Create](../images/image2.png)
 
 ## Step 3: Save the Submodel Template
 - Once you've entered all the required data, save the AAS template for future use and integration.
