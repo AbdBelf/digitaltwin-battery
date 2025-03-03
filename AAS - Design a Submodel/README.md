@@ -27,7 +27,7 @@ Below is an example of a description for instantiating an AAS SubModel for a bat
 
 1. Laptop
 
-2. Installed AASX Package Explorer (You can install it from [here](https://github.com/eclipse-aaspe/package-explorer/releases/download/v2024-03-05.alpha/aasx-package-explorer.2024-03-05.alpha.zip))
+2. Installed AASX Package Explorer (You can install it from [here](https://github.com/eclipse-aaspe/package-explorer/releases/download/v2024-06-10.alpha/aasx-package-explorer.2024-06-10.alpha.zip)) - (v.2024-06-10).
 
 ![AAS Import](../images/image1.png)
 
