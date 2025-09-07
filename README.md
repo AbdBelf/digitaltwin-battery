@@ -87,14 +87,5 @@ Testez votre système dans divers scénarios simulés, par exemple :
 
 
 ## Autres datasets et approche 
-Voir le dataset 'Prismatic Cells" : [CS2 Battery](https://calce.umd.edu/battery-data#CX2)
+Voir le dataset 'Prismatic Cells" : [CX2 Battery](https://calce.umd.edu/battery-data#CX2)
 
-
-## Exemple d'UI à développer 
-
-Voici un exemple d'UI à réaliser permettant de : 
-- Afficher l'état de la batterie actuel (temps réel)
-- Simuler un future état de la batterie
-- Afficher un graphique de l'évolution des parametres et résultats des simulations 
-
-![UI](images/UI.png)
