@@ -8,7 +8,7 @@ Pour pimenter le projet, voici quelques **bonus** que vous pouvez explorer :
 2. **Création d’une API REST** pour faciliter l’aide à la décision avec votre modèle d’apprentissage automatique.
 3. **Proposition d’une IHM animée** en fonction des paramètres simulés et des résultats prédits.
 
-Les données que vous utiliserez proviennent de la **NASA Ames Prognostics Center of Excellence (PCoE)**. Vous pouvez les trouver dans ce [fichier discharge.zip](./Design%20a%20ML%20model%20of%20a%20Battery/discharge.zip), ou depuis cette source [Li-ion Battery Aging Datasets](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data).
+Les données que vous utiliserez proviennent de la **NASA Ames Prognostics Center of Excellence (PCoE)**. Vous pouvez les trouver dans ce [fichier discharge.zip](./Design%20a%20ML%20model%20of%20a%20Battery/discharge.zip), ou depuis cette source [Battery Data - CX2 Battery](https://calce.umd.edu/battery-data#CX2) ou cette source [Li-ion Battery Aging Datasets](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data).
 
 ## Objectifs
 - **Développer un jumeau numérique** d'une batterie capable de prédire sa capacité ou durée de vie restante.
@@ -21,7 +21,7 @@ Les données que vous utiliserez proviennent de la **NASA Ames Prognostics Cente
 
 1. **Dégradation des Batteries** : Au fil du temps et des cycles de charge-décharge, les batteries perdent leur capacité, réduisant ainsi leur **durée de vie utile restante (RUL)**. Vous modéliserez ce processus grâce à un modèle d'apprentissage automatique basé sur des données réelles de la NASA.
 
-2. **Apprentissage Automatique** : En utilisant `scikit-learn` ou `TensorFlow`, vous créerez un modèle pour estimer la RUL en fonction de divers paramètres de la batterie (cycles de charge, température, tension).
+2. **Apprentissage Automatique** : En utilisant `scikit-learn` ou `TensorFlow`, vous créerez un modèle pour estimer la RUL en fonction de divers paramètres de la batterie (cycles de charge, température, tension, etc.)
 
 3. **Modèle de Description Standardisé (AAS)** : L'**Asset Administration Shell (AAS)** est une norme qui vous aidera à structurer les informations d'un actif physique et à faciliter l'interaction entre les systèmes numériques.
 
