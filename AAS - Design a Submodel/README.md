@@ -42,7 +42,7 @@ Use the information provided below (section 2 - Breakdown of the Submodel) to fi
 
 - File > Save your completed AAS file.(as AASX or JSON file)
 
-**Important !** Please ensure that the semantic IDs for each element are generated according to the pattern described above. Output the structure as a downloadable JSON file.
+**Important !** Please ensure that "ID" and "globalAssetId" for each element are generated according to the pattern described above. Output the structure as a downloadable JSON file.
 
 
 
@@ -56,8 +56,9 @@ Use the information provided below (section 2 - Breakdown of the Submodel) to fi
 - **idShort**: `"BatterySubModel"`  
   A human-readable, shorter identifier for the SubModel.
 
-- **semanticId**: `"https://irt-systemx.fr/ids/aas/semantic/battery"`  
+- **semanticId**: `"0112/2///61360_4#AAA017#001"`  
   The semantic identifier for this SubModel, used for linking external references and providing meaning to the SubModel.
+  In this example, we have used the [IEC 61360-4 - IEC/SC 3D - Common Data Dictionary (CDD - V2.0018.0002)](https://www.electropedia.org/cdd/iec61360/iec61360.nsf/TreeFrameset?OpenFrameSet)
 
 - **kind**: `"Instance"`  
   Defines that this SubModel is an instance of a battery (rather than a template or type).
@@ -70,7 +71,7 @@ Each SubModel element represents a specific property or characteristic of the ba
 
 #### 2.2.1 **Voltage_measured**
 - **idShort**: `"Voltage_measured"`
-- **semanticId**: `"https://irt-systemx.fr/ids/aas/semantic/voltage_measured"`
+- **semanticId**: `"0112/2///61360_4#AAA001"`
 - **valueType**: `"float"`
 - **value**: `3.7`
 - **unit**: `"V"`  
