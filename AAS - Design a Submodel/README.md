@@ -157,6 +157,6 @@ Each SubModel element represents a specific property or characteristic of the ba
 
 ## AAS Model Deployment
 
-Send me your AAS model (in json or AASX format) by email to: abdelhadi.belfadel@univ-lyon2.fr
+Send me your AAS model (in json or AASX format) by email.
 
 The model will be deployed and an IP address will be provided to get access to your AAS model and submodel elements.
