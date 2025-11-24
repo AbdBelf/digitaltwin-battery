@@ -38,7 +38,7 @@ Commencez par créer un modèle d’apprentissage automatique capable de prédir
 - **Évaluerez le modèle** : Mesurez la précision avec des métriques comme le Mean Squared Error (MSE).
 
 #### Jeu de Données :
-- Données provenant de la [NASA Ames Prognostics Center of Excellence](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data).
+- Données disponibles dans ce [fichier discharge.zip](./Design%20a%20ML%20model%20of%20a%20Battery/discharge.zip) provenant de la [NASA Ames Prognostics Center of Excellence](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data).
 - **Caractéristiques** : Tension, température, cycles de charge.
 - **Cible** : Nombre de cycle ou Capacité de batterie
 
@@ -78,7 +78,7 @@ Testez votre système dans divers scénarios simulés, par exemple :
 - **Flask** ou **FastAPI** : Pour l'API REST. [Flask - Quick start](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
 - **Streamlit** : Pour l'interface interactive et les animations. Voir la [documentation ici](https://docs.streamlit.io/)
 - **AAS (Asset Administration Shell)** : Pour modéliser le jumeau numérique. [AASX Package Explorer](https://github.com/eclipse-aaspe/package-explorer/releases/download/v2024-06-10.alpha/aasx-package-explorer-blazorexplorer.2024-06-10.alpha.zip)
-- **Jeu de Données de la NASA** : Pour entraîner et tester le modèle. [NASA Ames Prognostics Center of Excellence](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb/about_data)
+- **Jeu de Données de la NASA** : Disponible dans ce [fichier discharge.zip](./Design%20a%20ML%20model%20of%20a%20Battery/discharge.zip) pour entraîner et tester le modèle. Source de données:  [NASA Ames Prognostics Center of Excellence](https://calce.umd.edu/battery-data#CS2)
 
 ## Organisation du travail dans un groupe
 - **Etudiant A** : Entraînement du modèle d’apprentissage automatique; Implémentation de l’API REST.
@@ -86,6 +86,6 @@ Testez votre système dans divers scénarios simulés, par exemple :
 - **Etudiant C** : Création du tableau de bord interactif avec animations en utilisant streamlit et les API des étudiants A et B.
 
 
-## Autres datasets et approche 
+## Autres Batteries, datasets et approches 
 Voir le dataset 'Prismatic Cells" : [CX2 Battery](https://calce.umd.edu/battery-data#CX2)
 
