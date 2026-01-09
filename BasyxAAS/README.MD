@@ -18,6 +18,8 @@ https://www.docker.com/products/docker-desktop/
 
 # BaSyx Infrastructure Setup
 
+Run the following command line in the "BasyxAAS" folder: 
+
 ```bash
 docker compose up -d
 ```
