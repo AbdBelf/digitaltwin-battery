@@ -1,3 +1,15 @@
+# Install Git on your Development Environment 
+
+Download GIT from this URL
+
+https://git-scm.com/install/windows
+
+# Clone your project 
+
+```bash
+Git clone https://github.com/AbdBelf/digitaltwin-battery.git
+```
+
 # Install Docker Desktop on Windows 
 
 Download the Docker Desktop installer for Windows:
