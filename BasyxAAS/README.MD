@@ -1,9 +1,13 @@
+# Install Docker Desktop on Windows 
+
+Download the Docker Desktop installer for Windows:
+
+https://www.docker.com/products/docker-desktop/
+
 # BaSyx Infrastructure Setup
 
-After executing
-
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 the following components are started:
