@@ -34,3 +34,7 @@ the following components are started:
 * AAS Web UI (http://localhost:3000)
 
 By leveraging the registry integration features of AAS Repository and Submodel Repository, the preconfigured AAS Environment serializations are loaded and automatically registered.
+
+# BaSyx APIs 
+* AAS Repository & Submodel Repository APIs: http://localhost:8081/swagger-ui/index.html
+
