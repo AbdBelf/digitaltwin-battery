@@ -79,10 +79,11 @@ Testez votre système dans divers scénarios simulés, par exemple :
 - **Streamlit** : Pour l'interface interactive et les animations. Voir la [documentation ici](https://docs.streamlit.io/)
 - **AAS (Asset Administration Shell)** : Pour modéliser le jumeau numérique. [AASX Package Explorer](https://github.com/eclipse-aaspe/package-explorer/releases/download/v2024-06-10.alpha/aasx-package-explorer-blazorexplorer.2024-06-10.alpha.zip)
 - **Jeu de Données de la NASA** : Disponible dans ce [fichier discharge.zip](./Design%20a%20ML%20model%20of%20a%20Battery/discharge.zip) pour entraîner et tester le modèle. Source de données:  [NASA Ames Prognostics Center of Excellence](https://calce.umd.edu/battery-data#CS2)
+- **Node Red** : Node-RED est un outil de programmation visuelle basé sur des flux (flows) qui permet de connecter facilement des applications, des services, des API et des équipements industriels sans développer une application complète. Dans ce projet, Node-RED peut servir de middleware d'intégration entre la batterie (ou son simulateur) et son jumeau numérique. Il récupère automatiquement les données de la batterie simulée, les transforme si nécessaire, puis met à jour les propriétés correspondantes dans l'AAS via les API REST. [Documentation Node-Red](https://nodered.org/docs/tutorials/first-flow)
 
 ## Organisation du travail dans un groupe
 - **Etudiant A** : Entraînement du modèle d’apprentissage automatique; Implémentation de l’API REST.
-- **Etudiant B** : Modélisation du jumeau numérique avec AAS; Exposition du modèle par API REST.
+- **Etudiant B** : Modélisation du jumeau numérique avec AAS; Exposition du modèle par API REST; Implementation du flux de mise à jour du jumeau numérique et la batterie physique/simulée avec Node-Red;
 - **Etudiant C** : Création du tableau de bord interactif avec animations en utilisant streamlit et les API des étudiants A et B.
 
 
