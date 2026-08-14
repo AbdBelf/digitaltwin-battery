@@ -1,0 +1,144 @@
+[
+    {
+        "id": "e70a581f8e987078",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ffc9cb56f23c4b2d",
+        "type": "inject",
+        "z": "e70a581f8e987078",
+        "name": "Inject Voltage_measured",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 470,
+        "y": 140,
+        "wires": [
+            [
+                "7554baf1fc01060c"
+            ]
+        ]
+    },
+    {
+        "id": "7554baf1fc01060c",
+        "type": "http request",
+        "z": "e70a581f8e987078",
+        "name": "Read the Battery Data",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://battery-emulator:5000/battery",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 740,
+        "y": 260,
+        "wires": [
+            [
+                "691c916f57876bfe"
+            ]
+        ]
+    },
+    {
+        "id": "691c916f57876bfe",
+        "type": "function",
+        "z": "e70a581f8e987078",
+        "name": "Extract the Measurements",
+        "func": "msg.voltage = msg.payload.Voltage_measured;\nmsg.current = msg.payload.Current_measured;\nmsg.temperature = msg.payload.Temperature_measured;\nmsg.time = msg.payload.Time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 400,
+        "wires": [
+            [
+                "717e9fdfb77cf454"
+            ]
+        ]
+    },
+    {
+        "id": "717e9fdfb77cf454",
+        "type": "function",
+        "z": "e70a581f8e987078",
+        "name": "Update Battery Properties in the AAS",
+        "func": "msg.method = \"PATCH\";\nmsg.headers = {\n\"Content-Type\": \"application/json\"\n};\n\nmsg.payload = '\"' + msg.voltage + '\"';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 620,
+        "wires": [
+            [
+                "79d53441a1d89aef"
+            ]
+        ]
+    },
+    {
+        "id": "79d53441a1d89aef",
+        "type": "http request",
+        "z": "e70a581f8e987078",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://aas-env:8081/submodels/aHR0cDovL2FjcGx0Lm9yZy9TdWJtb2RlbHMvQXNzZXRzL1Rlc3RBc3NldC9CaWxsT2ZNYXRlcmlhbA/submodel-elements/ExampleEntity.ExampleProperty/$value",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1430,
+        "y": 740,
+        "wires": [
+            [
+                "5d1fad6f9cd0e072"
+            ]
+        ]
+    },
+    {
+        "id": "5d1fad6f9cd0e072",
+        "type": "debug",
+        "z": "e70a581f8e987078",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 860,
+        "wires": []
+    }
+]
