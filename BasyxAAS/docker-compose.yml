@@ -94,3 +94,20 @@ services:
     depends_on:
       aas-env:
         condition: service_healthy
+
+  battery-emulator:
+    build: ../Battery_Emulator
+    container_name: battery-emulator
+    ports:
+    - "5000:5000"
+
+  node-red:
+    image: nodered/node-red:latest
+    container_name: node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./node_red_data:/data
+    depends_on:
+      - aas-env
+      - battery-emulator
