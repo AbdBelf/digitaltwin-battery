@@ -32,6 +32,7 @@ the following components are started:
 * Submodel Registry (http://localhost:8083/submodel-descriptors)
 * AAS Discovery (http://localhost:8084/lookup/shells)
 * AAS Web UI (http://localhost:3000)
+* Node-Red UI (http://localhost:1880)
 
 By leveraging the registry integration features of AAS Repository and Submodel Repository, the preconfigured AAS Environment serializations are loaded and automatically registered.
 
