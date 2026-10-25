@@ -1,4 +1,11 @@
-# Projet : Création d’un Jumeau Numérique de Batterie pour la Supervision
+# 1. Labs/TPs
+
+1. **Lab/TP 1**: [Install Digital Twin Environment](/BasyxAAS/README.MD)
+2. **Lab/TP 2**: [Create an AAS](/AAS%20-%20Design%20a%20Submodel/README.md)
+3. **Lab/TP 3**: [Synchronizing a Battery Asset Administration Shell (AAS) with Node-RED](/Battery_Emulator/README.MD)
+
+
+# 2. Projet : Création d’un Jumeau Numérique de Batterie pour la Supervision
 
 ## Aperçu
 Dans ce projet, vous allez développer un **jumeau numérique d'un système de batterie** en utilisant Python et l’apprentissage automatique. Ce jumeau va simuler les performances et la dégradation d’une batterie au fil du temps en prédisant la **durée de vie restante (RUL - Remaining Useful Life)**. Vous travaillerez avec des données réelles, comme le nombre de cycles de charge, la température et la tension, pour entraîner votre modèle. Vous créerez aussi une **interface homme-machine (IHM)** avec **Streamlit** pour superviser le jumeau numérique et afficher les résultats en temps réel.
