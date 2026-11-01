@@ -50,6 +50,9 @@ services:
     container_name: aas-registry
     ports:
       - 8082:8080
+    environment:
+      SPRING_MONGODB_URI: "mongodb://mongoAdmin:mongoPassword@mongo:27017/sm-registry?authSource=admin"
+      SPRING_DATA_MONGODB_URI: "mongodb://mongoAdmin:mongoPassword@mongo:27017/sm-registry?authSource=admin"
     volumes:
       - ./aas-registry.yml:/workspace/config/application.yml
     depends_on:
@@ -61,6 +64,9 @@ services:
     container_name: sm-registry
     ports:
       - 8083:8080
+    environment:
+      SPRING_MONGODB_URI: "mongodb://mongoAdmin:mongoPassword@mongo:27017/sm-registry?authSource=admin"
+      SPRING_DATA_MONGODB_URI: "mongodb://mongoAdmin:mongoPassword@mongo:27017/sm-registry?authSource=admin"
     volumes:
       - ./sm-registry.yml:/workspace/config/application.yml
     depends_on:
